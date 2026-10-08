@@ -1,0 +1,132 @@
+/* Variants - Color */
+:root{
+  --color-primary: #20977B;
+  --color-secondary: #F89F79;
+  --color-primary-dark: #167C64;
+  --color-primary-light: #67f1d1;;
+  --color-secondary-dark: #F1662A;
+  --color-text-dark: #222222;
+  --color-text-green: #1E3C35;
+  --color-text-gray: #555555;
+  --color-text-deactive:#718681;
+  --color-bg-light: #FAFAF4;
+  --color-bg-dark:#162724;
+  --color-gradient-dark: linear-gradient(256deg, #111615 9.32%, #25403A 116.65%);
+  --gradient-green: linear-gradient(90deg, #20977B 0%, #0A3128 100%);
+}
+
+/* Variants - font */
+:root{
+  --bombaram: 'HsBombaram20';
+  --nanumac: 'NanumSquareAc';
+  --paper:'Paperozi';
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+section{padding: 12rem 0;}
+.inner{
+  width: 140rem;
+  margin: auto;
+}
+.mob{display: none;}
+.title{
+  color: var(--color-text-green);
+  width: fit-content;
+  position: relative;
+  font-family: var(--bombaram);
+  font-size: 3.5rem;
+  margin-top: 5rem;
+  span.count{
+    position: absolute;
+    top: -1.7rem;
+    left: 90%;
+    width: fit-content;
+    display: block;
+    box-shadow: 2px 2px 5px 0 rgba(242, 78, 30, 0.50);
+  }
+}
+/* btn */
+.btn.about{
+  display: inline-flex;
+  padding: 0.3rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  background-color: rgba(241,102,42,.7);
+  border: 0.1rem solid var(--color-secondary);
+  border-radius: 10rem;
+  backdrop-filter: blur(3px);
+  box-shadow: -2px 2px 5px 0 rgba(242, 78, 30, 0.50);
+  cursor: auto;
+}
+.btn.about.ellipsis{
+  padding: 2rem 1.5rem;
+  display: inline-flex;
+  span{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    &:not(:first-child){margin-left: 0.9rem;}
+  }
+}
+.btn.about.theme{
+  padding: 1rem;
+  background-color: rgba(22, 124, 100, .7);
+  border: 0.16rem solid #2DC29F;
+  box-shadow: -2px 2px 5px 0 rgba(22, 124, 100, 0.50);
+  .arrow-track{
+    width: 15rem;
+    height: 5rem;
+    .arrowBtn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 7rem;
+      height: 5rem;
+      background-color: rgba(127, 255, 212,.5);
+      border: 0.08rem solid #7FFFD4;
+      box-shadow: none;
+      transform: translateX(0);
+      animation: Flash 1s 1 ease both;
+      transition: transform 500ms cubic-bezier(0.725, 0.010, 0.140, 0.990);
+      cursor: pointer;
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        background: url(../img/arrow.svg) center/cover no-repeat;
+        transition: 0.25s;
+      }
+    }
+  }
+}
+@keyframes Flash {
+  0%, 50%, 100% {opacity:1;}
+  25%, 75% {opacity:0.6;}
+}
+.btn.about.theme .arrowBtn:hover{
+  &:before{background: url(../img/moon.svg) center/cover no-repeat;}
+}
+
+/* title */
+.sec-title{
+  font-family: var(--bombaram);
+  font-size: 3.5rem;
+  position: relative;
+  margin-left: 2rem;
+  .btn.about{
+    position: absolute;
+    left: -2.7rem;
+    top: -1.2rem;
+  }
+}
+

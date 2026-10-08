@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포인트 적립/사용</title>
+  <link rel="shortcut icon" href="img/simbol2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#" class="top-btn">
+    <div>
+      <img src="img/simbol.png" alt="CJ ONE 심볼">
+    </div>
+  </a>
+  <div class="container">
+    <header>
+      <div class="utilMenuWrap">
+        <div class="header-inner util-menu">
+          <a class="login-modal" href="#none">로그인</a>
+          <a href="join.html">회원가입</a>
+          <a class="app-modal" href="#none">APP&nbsp;<i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="gnbMenuWrap">
+        <nav class="header-inner">
+          <h1>
+            <a href="index.html">
+              <img src="img/logo-white.png" alt="CJ ONE" class="logo_white">
+              <img src="img/logo-color.png" alt="CJ ONE" class="logo_color">
+            </a>
+          </h1>
+          <ul class="gnb">
+            <li class="main-menu">
+              <a href="about1.html">소개</a>
+                <ul class="sub-menu">
+                  <li><a href="about1.html">CJ ONE 소개</a></li>
+                  <li><a href="about2.html">사용처 안내</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="point1.html">포인트</a>
+                <ul class="sub-menu">
+                  <li><a href="point1.html">포인트 적립/사용</a></li>
+                  <li><a href="point2.html">제휴 신용카드 안내</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="event1.html">혜택</a>
+                <ul class="sub-menu">
+                  <li><a href="event1.html">이벤트</a></li>
+                  <li><a href="event2.html">득템프</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="mypage.html">나의 ONE</a>
+                <ul class="sub-menu">
+                  <li><a href="mypage.html">내 포인트</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="notice1.html">고객센터</a>
+                <ul class="sub-menu">
+                  <li><a href="notice1.html">공지사항</a></li>
+                  <li><a href="notice2.html">1:1 상담</a></li>
+                </ul>
+            </li>
+          </ul>
+          <div class="search-box">
+            <input type="text">
+            <img src="img/simbol2.png" alt="로고 심볼">
+            <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+        <!-- mobile full menu -->
+        <div class="m-menu">
+          <ul class="m-gnb">
+            <li>
+              <a href="about1.html"><strong>소개</strong></a>
+              <ul>
+                <li><a href="about1.html">CJ ONE 소개</a></li>
+                <li><a href="about2.html">사용처 안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="point1.html"><strong>포인트</strong></a>
+              <ul>
+                <li><a href="point1.html">포인트 적립/사용</a></li>
+                <li><a href="point2.html">제휴 신용카드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="event1.html"><strong>혜택</strong></a>
+              <ul>
+                <li><a href="event1.html">이벤트</a></li>
+                <li><a href="event2.html">득템프</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="mypage.html"><strong>나의 ONE</strong></a>
+              <ul>
+                <li><a href="mypage.html">내 포인트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="notice1.html"><strong>고객센터</strong></a>
+              <ul>
+                <li><a href="notice1.html">공지사항</a></li>
+                <li><a href="notice2.html">1:1 문의</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="m-search">
+            <img src="img/simbol2.png" alt="로고 심볼">
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </div>
+        <div class="sub-bg"></div>
+      </div>
+
+      <!-- login modal -->
+      <div class="modal modalLogin">
+        <div class="modal-content">
+          <a href="#none" class="btn-close"><i class="fa-solid fa-xmark"></i></a>
+          <div class="modal-body">
+            <h2>로그인</h2>
+            <div class="login">
+              <input type="text" name="id" placeholder="아이디를 입력해주세요">
+              <input type="password" name="pw" placeholder="비밀번호를 입력해주세요">
+              <input type="submit" value="로그인">
+              <ul class="log-ck">
+                <li><a href="join.html">회원가입</a></li>
+                <li>|</li>
+                <li>아이디 · 비밀번호 찾기</li>
+              </ul>
+            </div>
+            <div class="log-sns">
+              <span>SNS 계정으로 로그인하기</span>
+              <ul class="log-ck-sns">
+                <li><a href="https://nid.naver.com/nidlogin.login"><i class="fa-solid fa-n"></i>네이버 로그인</a></li>
+                <li><a href="https://buly.kr/Awfz3Pv"><i class="fa-brands fa-kaggle"></i>카카오 로그인</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- appDownload modal -->
+      <div class="modal modalApp">
+        <div class="modal-content">
+          <a href="#none" class="btn-close"><i class="fa-solid fa-xmark"></i></a>
+          <div class="modal-body">
+            <h2>CJ ONE APP 다운받기</h2>
+            <p>CJ ONE APP을 다운받아 편하게 이용하세요.</p>
+            <div class="modal-app-down">
+              <ul class="qr">
+                <li>
+                  <img src="img/android-qr.png" alt="CJ ONE APP 다운 QR코드">
+                  <span>Android OS</span>
+                </li>
+                <li>
+                  <img src="img/ios-qr.png" alt="CJ ONE APP 다운 QR코드">
+                  <span>iOS</span>
+                </li>
+              </ul>
+              <div class="app-form">
+                <label for="appPhone">APP 설치 URL 보내기</label>
+                <div class="app-form-input">
+                  <input type="text" name="appDownload" id="appPhone" placeholder="휴대폰번호를 입력해주세요">
+                  <button>동의 후<br class="mo-only">전송하기</button>
+                </div>
+                <p>· APP 설치 URL 전송을 위해 고객님 휴대폰 번호를 수집합니다.<br>
+                  · 수집된 정보는 문자 발송 완료 후 즉시 삭제됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mainVisual subVisual2"></div>
+
+    <div class="sub-location">
+      <ul>
+        <li><a href="index.html" class="home"><img src="img/home-icon.png" alt=""></a></li>
+        <li><i class="fa-solid fa-chevron-right"></i></li>
+        <li><a href="point1.html">포인트</a></li>
+        <li><i class="fa-solid fa-chevron-right"></i></li>
+        <li>포인트 적립/사용</li>
+      </ul>
+    </div>
+
+    <section class="subSec pointSec1">
+      <div class="sec-inner">
+        <div class="sub-tit ani x_Left">
+          <strong>포인트 적립/사용</strong>
+          <p>제휴 브랜드 이용 금액에 따라 CJ ONE 포인트를 적립 또는 현금처럼 사용 할 수 있습니다.</p>
+        </div>
+        <div class="tabSec-col">
+          <div class="tab-header ani x_Left">
+            <div class="tab-box">
+              <ul class="tab">
+                <li data-alt2="point1-tab1" class="active">적립</li>
+                <li data-alt2="point1-tab2">사용</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="tab-contents ani x_Right">
+            <div id="point1-tab1" class="active">
+              <ul class="list point-how">
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-stamp"></i>
+                    <strong>01</strong>
+                  </div>
+                  <p>
+                    적립된 포인트는 가용화를 거쳐<span> 사용 가능한 포인트<i class="fa-solid fa-star"></i></span>로 전환됩니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-stamp"></i>
+                    <strong>02</strong>
+                  </div>
+                  <p>
+                    온라인 쇼핑몰에서 <span>포인트 받기로 다운</span>받은 포인트는 즉시 가용포인트로 전환됩니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-stamp"></i>
+                    <strong>03</strong>
+                  </div>
+                  <p>
+                    결제 시 포인트를 사용할 경우, 포인트 <span>사용 금액을 제외한 지불 금액</span>에 대해 포인트가 적립됩니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-stamp"></i>
+                    <strong>04</strong>
+                  </div>
+                  <p>
+                    각 제휴 브랜드별로 포인트 적립/사용이 제외되는 일부 매장 및 상품이 있을 수 있습니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-stamp"></i>
+                    <strong>05</strong>
+                  </div>
+                  <p>
+                    각 제휴 브랜드별로 <span>1일 적립 횟수 제한</span>이 있으니 브랜드별 제한 내용을 확인하시기 바랍니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-face-smile-wink"></i>
+                    <strong>TIP</strong>
+                  </div>
+                  <p>
+                    제휴 브랜드 이용실적에 따라 최대 100%까지 추가 포인트를 받으실 수 있습니다.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div id="point1-tab2">
+              <ul class="list point-how">
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-coins"></i>
+                    <strong>01</strong>
+                  </div>
+                  <p>
+                    보유 가용 포인트 <span>1,000포인트 이상일 때 현금처럼</span> 사용 가능합니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-coins"></i>
+                    <strong>02</strong>
+                  </div>
+                  <p>
+                    보유 가용 포인트 10,000 포인트 이상 사용 시, <span>카드 비밀번호 또는 본인인증</span>이 필요합니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-coins"></i>
+                    <strong>03</strong>
+                  </div>
+                  <p>
+                    <span>CJ ONE 카드 혹은 CJ ONE 모바일 카드</span> 중 최소 1개 이상 카드 등록이 되어 있어야 사용이 가능합니다.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-coins"></i>
+                    <strong>04</strong>
+                  </div>
+                  <p>
+                    <span>오프라인 매장에서는 카드를 소지</span>한 경우에 한해서만 포인트 사용이 가능합니다. (마그네틱, 모바일/App카드)
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-coins"></i>
+                    <strong>05</strong>
+                  </div>
+                  <p>
+                    각 제휴 브랜드별로 포인트 사용 단위는 상이하며, 자세한 내용은 제휴 브랜드별 유의사항을 확인하세요.
+                  </p>
+                </li>
+                <li>
+                  <div class="tit">
+                    <i class="fa-solid fa-face-smile-wink"></i>
+                    <strong>TIP</strong>
+                  </div>
+                  <p>
+                    적립된 포인트의 유효기간과 소멸일을 꼭 확인하세요.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subSec pointSec2">
+      <div class="sec-inner">
+        <h2 class="ani y_Bottom">포인트 이용방법</h2>
+        <ul class="use-point">
+          <li class="ani y_Bottom delay02">
+            <div class="tit">
+              <i class="fa-solid fa-store"></i>
+              <strong>오프라인 매장</strong>
+            </div>
+            <ul class="txt-box">
+              <li>결제 시 CJ ONE 카드 제시와 함께 포인트 적립 혹은 사용을 요청하세요.</li>
+              <li>카드 미 휴대시, 회원님의 휴대전화번호 확인으로 적립 가능합니다.</li>
+              <li>카드를 소지한 경우에 한해서만 포인트 사용이 가능합니다. (마그네틱, 모바일/App카드)</li>
+              <li>일부 제휴사의 경우 포인트 사용 시, 카드 비밀번호 입력 기준이 다를 수 있습니다.</li>
+            </ul>
+          </li>
+          <li class="ani y_Bottom delay04">
+            <div class="tit">
+              <i class="fa-solid fa-desktop"></i>
+              <strong>온라인 매장</strong>
+            </div>
+            <ul class="txt-box">
+              <li>CJ ONE 제휴 브랜드 웹사이트의 상품 결제화면에서 잔여 가용포인트를 확인하고 바로 사용할 수 있습니다.</li>
+              <li>CJ ONE 제휴 브랜드 웹사이트에서 로그인 후 구매 혹은 결제하시면 자동 적립됩니다.</li>
+            </ul>
+          </li>
+          <li class="ani y_Bottom delay06">
+            <div class="tit">
+              <i class="fa-solid fa-calendar-check"></i>
+              <strong>유효기간 체크</strong>
+            </div>
+            <ul class="txt-box txt-box2">
+              <li class="tit2">포인트 유효기간
+                <ul>
+                  <li>기본 적립 포인트 & 보너스포인트 : 24개월 (일반 상품 / 서비스 구매 시 적립)</li>
+                  <li>선물 받은 포인트 : 6개월 (선물 받은 날 부터!)</li>
+                  <li>카드를 소지한 경우에 한해서만 포인트 사용이 가능합니다. (마그네틱, 모바일/App카드)</li>
+                  <li>이벤트로 받은 포인트 : 이벤트마다 유효기간 다르게 지정 (이벤트 당첨 시 확인 필수!)</li>
+                </ul>
+              </li>
+              <li class="tit2">포인트 소멸
+                <ul>
+                  <li>소멸예정포인트는 유효기간 종료일이 다가와 소멸이 예상되는 포인트입니다.</li>
+                  <li>유효기간이 경과된 포인트는 유효기간 종료되는 해당 월 말일에 소멸됩니다.</li>
+                  <li>소멸 기준은 잔여 가용포인트 중 유효기간이 가장 짧은 포인트부터 소멸되며, 소멸된 포인트는 복구되지 않습니다.</li>
+                  <li>포인트 사용취소 시점에 해당 포인트의 유효기간이 경과한 경우, 당일까지만 사용 가능하며 소멸된 이후 복구되지 않습니다.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerWrap">
+        <h2 class="ft-logo"><img src="img/logo-grey.png" alt="CJ ONE LOGO"></h2>
+        <div class="ft-text">
+          <ul class="ft-link">
+            <li><a href="https://www.cjone.com/cjmweb/terms.do?type=1">이용약관</a></li>
+            <li><a href="https://www.cjone.com/cjmweb/privacy.do?privacyDate=&recent_yn=Y">개인정보처리방침</a></li>
+            <li><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1048136565">사업자정보확인</a></li>
+          </ul>
+          <p>
+            대표이사 유인상 | 주소 04323 서울시 용산구 한강대로 366 트윈시티 10층<br>
+            CJ ONE 고객센터 1577-8888 | 사업자 등록번호 104-81-36565
+          </p>
+          <address>Copyright &copy;2016 CJ OLIVENETWORKS. All Rights Reserved</address>
+        </div>
+        <div class="ft-right">
+          <ul class="ft-sns">
+            <li><a href="https://www.instagram.com/cjone.life/?hl=ko" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/user/CJONEcard" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://pf.kakao.com/_zzbBC" target="_blank"><i class="fa-solid fa-comment"></i></a></li>
+          </ul>
+          <div class="family">
+            <div class="dropdown">
+              <div class="sitemap-title">CJ 그룹 계열사</div>
+              <ul class="site">
+                <li class="site-main">CJ 그룹
+                  <ul class="site-sub">
+                    <li><a href="https://www.cj.net/" target="_blank">CJ주식회사</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">식품 & 식품서비스
+                  <ul class="site-sub">
+                    <li><a href="https://www.cj.co.kr/kr/index" target="_blank">CJ제일제당</a></li>
+                    <li><a href="https://www.cjfreshway.com/index.jsp" target="_blank">CJ프레시웨이</a></li>
+                    <li><a href="https://www.cjfoodville.co.kr/main.asp" target="_blank">CJ푸드빌</a></li>
+                    <li><a href="http://www.cjmd1.co.kr/main/main.aspx" target="_blank">CJ엠디원</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">생명공학
+                  <ul class="site-sub">
+                    <li><a href="https://www.cj.co.kr/kr/index" target="_blank">CJ제일제당 BIO사업부문</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">신유통
+                  <ul class="site-sub">
+                    <li><a href="https://company.cjonstyle.com/index.asp" target="_blank">CJ ENM 커머스부문</a></li>
+                    <li><a href="http://www.cjlogistics.com/" target="_blank">CJ대한통운</a></li>
+                    <li><a href="https://www.cjtelenix.com/" target="_blank">CJ텔레닉스</a></li>
+                    <li><a href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0" target="_blank">CJ올리브영</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">엔터테인먼트 & 미디어
+                  <ul class="site-sub">
+                    <li><a href="https://www.cjenm.com/ko/" target="_blank">CJ ENM 엔터테인먼트부문</a></li>
+                    <li><a href="https://corp.cgv.co.kr/?lang=kr" target="_blank">CJ CGV</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">인프라
+                  <ul class="site-sub">
+                    <li><a href="https://www.cjenc.co.kr/kr/Default.asp" target="_blank">CJ대한통운 건설부문</a></li>
+                    <li><a href="https://www.cjolivenetworks.co.kr/" target="_blank">CJ올리브네트웍스</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

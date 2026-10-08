@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>득뎀프</title>
+  <link rel="shortcut icon" href="img/simbol2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#" class="top-btn">
+    <div>
+      <img src="img/simbol.png" alt="CJ ONE 심볼">
+    </div>
+  </a>
+  <div class="container">
+    <header>
+      <div class="utilMenuWrap">
+        <div class="header-inner util-menu">
+          <a class="login-modal" href="#none">로그인</a>
+          <a href="join.html">회원가입</a>
+          <a class="app-modal" href="#none">APP&nbsp;<i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+      <div class="gnbMenuWrap">
+        <nav class="header-inner">
+          <h1>
+            <a href="index.html">
+              <img src="img/logo-white.png" alt="CJ ONE" class="logo_white">
+              <img src="img/logo-color.png" alt="CJ ONE" class="logo_color">
+            </a>
+          </h1>
+          <ul class="gnb">
+            <li class="main-menu">
+              <a href="about1.html">소개</a>
+                <ul class="sub-menu">
+                  <li><a href="about1.html">CJ ONE 소개</a></li>
+                  <li><a href="about2.html">사용처 안내</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="point1.html">포인트</a>
+                <ul class="sub-menu">
+                  <li><a href="point1.html">포인트 적립/사용</a></li>
+                  <li><a href="point2.html">제휴 신용카드 안내</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="event1.html">혜택</a>
+                <ul class="sub-menu">
+                  <li><a href="event1.html">이벤트</a></li>
+                  <li><a href="event2.html">득템프</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="mypage.html">나의 ONE</a>
+                <ul class="sub-menu">
+                  <li><a href="mypage.html">내 포인트</a></li>
+                </ul>
+            </li>
+            <li class="main-menu">
+              <a href="notice1.html">고객센터</a>
+                <ul class="sub-menu">
+                  <li><a href="notice1.html">공지사항</a></li>
+                  <li><a href="notice2.html">1:1 상담</a></li>
+                </ul>
+            </li>
+          </ul>
+          <div class="search-box">
+            <input type="text">
+            <img src="img/simbol2.png" alt="로고 심볼">
+            <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+        <!-- mobile full menu -->
+        <div class="m-menu">
+          <ul class="m-gnb">
+            <li>
+              <a href="about1.html"><strong>소개</strong></a>
+              <ul>
+                <li><a href="about1.html">CJ ONE 소개</a></li>
+                <li><a href="about2.html">사용처 안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="point1.html"><strong>포인트</strong></a>
+              <ul>
+                <li><a href="point1.html">포인트 적립/사용</a></li>
+                <li><a href="point2.html">제휴 신용카드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="event1.html"><strong>혜택</strong></a>
+              <ul>
+                <li><a href="event1.html">이벤트</a></li>
+                <li><a href="event2.html">득템프</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="mypage.html"><strong>나의 ONE</strong></a>
+              <ul>
+                <li><a href="mypage.html">내 포인트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="notice1.html"><strong>고객센터</strong></a>
+              <ul>
+                <li><a href="notice1.html">공지사항</a></li>
+                <li><a href="notice2.html">1:1 문의</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="m-search">
+            <img src="img/simbol2.png" alt="로고 심볼">
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </div>
+        <div class="sub-bg"></div>
+      </div>
+
+      <!-- login modal -->
+      <div class="modal modalLogin">
+        <div class="modal-content">
+          <a href="#none" class="btn-close"><i class="fa-solid fa-xmark"></i></a>
+          <div class="modal-body">
+            <h2>로그인</h2>
+            <div class="login">
+              <input type="text" name="id" placeholder="아이디를 입력해주세요">
+              <input type="password" name="pw" placeholder="비밀번호를 입력해주세요">
+              <input type="submit" value="로그인">
+              <ul class="log-ck">
+                <li><a href="join.html">회원가입</a></li>
+                <li>|</li>
+                <li>아이디 · 비밀번호 찾기</li>
+              </ul>
+            </div>
+            <div class="log-sns">
+              <span>SNS 계정으로 로그인하기</span>
+              <ul class="log-ck-sns">
+                <li><a href="https://nid.naver.com/nidlogin.login"><i class="fa-solid fa-n"></i>네이버 로그인</a></li>
+                <li><a href="https://buly.kr/Awfz3Pv"><i class="fa-brands fa-kaggle"></i>카카오 로그인</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- appDownload modal -->
+      <div class="modal modalApp">
+        <div class="modal-content">
+          <a href="#none" class="btn-close"><i class="fa-solid fa-xmark"></i></a>
+          <div class="modal-body">
+            <h2>CJ ONE APP 다운받기</h2>
+            <p>CJ ONE APP을 다운받아 편하게 이용하세요.</p>
+            <div class="modal-app-down">
+              <ul class="qr">
+                <li>
+                  <img src="img/android-qr.png" alt="CJ ONE APP 다운 QR코드">
+                  <span>Android OS</span>
+                </li>
+                <li>
+                  <img src="img/ios-qr.png" alt="CJ ONE APP 다운 QR코드">
+                  <span>iOS</span>
+                </li>
+              </ul>
+              <div class="app-form">
+                <label for="appPhone">APP 설치 URL 보내기</label>
+                <div class="app-form-input">
+                  <input type="text" name="appDownload" id="appPhone" placeholder="휴대폰번호를 입력해주세요">
+                  <button>동의 후<br class="mo-only">전송하기</button>
+                </div>
+                <p>· APP 설치 URL 전송을 위해 고객님 휴대폰 번호를 수집합니다.<br>
+                  · 수집된 정보는 문자 발송 완료 후 즉시 삭제됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <div class="mainVisual subVisual3"></div>
+
+    <div class="sub-location">
+      <ul>
+        <li><a href="index.html" class="home"><img src="img/home-icon.png" alt=""></a></li>
+        <li><i class="fa-solid fa-chevron-right"></i></li>
+        <li><a href="point1.html">혜택</a></li>
+        <li><i class="fa-solid fa-chevron-right"></i></li>
+        <li>득템프</li>
+      </ul>
+    </div>
+
+    <section class="subSec eventSec2">
+      <div class="sec-inner">
+        <div class="sub-tit ani y_Bottom txt-cetner">
+          <strong>득뎀프 참여방법</strong>
+            <p>CJ ONE 득템프는 시작, 응모하기 버튼 클릭 시 참여가 완료됩니다.</p>
+            <ul class="stamp-nav">
+              <li>
+                <i class="fa-solid fa-stamp"></i>
+                <p>득템프 시작</p>
+              </li>
+              <li></li>
+              <li>
+                <i class="fa-solid fa-square-check"></i>
+                <p>스탬프 이용동의</p>
+              </li>
+              <li></li>
+              <li>
+                <i class="fa-solid fa-store"></i>
+                <p>매장방문(자동적립)</p>
+              </li>
+              <li></li>
+              <li>
+                <i class="fa-solid fa-trophy"></i>
+                <p>득템프 응모하기</p>
+              </li>
+            </ul>
+          </div>
+          <ul class="list stamp-list ani y_Bottom">
+            <li>
+              <div class="img-box"><img src="img/stamp-bg-01.png" alt="ONE PICK CULTURE 영화 &lt;보스&gt; 예매권 증정"></div>
+              <div class="stamp-txt">
+                <strong>9월 APP 출석체크! 하루 최대 500P GET</strong>
+                <p>2025.09.01 ~ 09.30</p>
+                <a href="https://www.cjone.com/cjmweb/event-coupon/stamp/stampDetail.do?stmp_no=STMP202508295855&rand=0.24199777161154212" class="btn">시작하기</a>
+              </div>
+            </li>
+            <li>
+              <div class="img-box"><img src="img/stamp-bg-02.png" alt="ONE PICK CULTURE 영화 &lt;보스&gt; 예매권 증정"></div>
+              <div class="stamp-txt">
+                <strong>9월 원더락 출첵하면 하루 최대 1,000P</strong>
+                <p>2025.09.01 ~ 09.30</p>
+                <a href="https://www.cjone.com/cjmweb/event-coupon/stamp/stampDetail.do?stmp_no=STMP202508295903&rand=0.5720355438052189" class="btn">시작하기</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footerWrap">
+        <h2 class="ft-logo"><img src="img/logo-grey.png" alt="CJ ONE LOGO"></h2>
+        <div class="ft-text">
+          <ul class="ft-link">
+            <li><a href="https://www.cjone.com/cjmweb/terms.do?type=1">이용약관</a></li>
+            <li><a href="https://www.cjone.com/cjmweb/privacy.do?privacyDate=&recent_yn=Y">개인정보처리방침</a></li>
+            <li><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1048136565">사업자정보확인</a></li>
+          </ul>
+          <p>
+            대표이사 유인상 | 주소 04323 서울시 용산구 한강대로 366 트윈시티 10층<br>
+            CJ ONE 고객센터 1577-8888 | 사업자 등록번호 104-81-36565
+          </p>
+          <address>Copyright &copy;2016 CJ OLIVENETWORKS. All Rights Reserved</address>
+        </div>
+        <div class="ft-right">
+          <ul class="ft-sns">
+            <li><a href="https://www.instagram.com/cjone.life/?hl=ko" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/user/CJONEcard" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://pf.kakao.com/_zzbBC" target="_blank"><i class="fa-solid fa-comment"></i></a></li>
+          </ul>
+          <div class="family">
+            <div class="dropdown">
+              <div class="sitemap-title">CJ 그룹 계열사</div>
+              <ul class="site">
+                <li class="site-main">CJ 그룹
+                  <ul class="site-sub">
+                    <li><a href="https://www.cj.net/" target="_blank">CJ주식회사</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">식품 & 식품서비스
+                  <ul class="site-sub">
+                    <li><a href="https://www.cj.co.kr/kr/index" target="_blank">CJ제일제당</a></li>
+                    <li><a href="https://www.cjfreshway.com/index.jsp" target="_blank">CJ프레시웨이</a></li>
+                    <li><a href="https://www.cjfoodville.co.kr/main.asp" target="_blank">CJ푸드빌</a></li>
+                    <li><a href="http://www.cjmd1.co.kr/main/main.aspx" target="_blank">CJ엠디원</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">생명공학
+                  <ul class="site-sub">
+                    <li><a href="https://www.cj.co.kr/kr/index" target="_blank">CJ제일제당 BIO사업부문</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">신유통
+                  <ul class="site-sub">
+                    <li><a href="https://company.cjonstyle.com/index.asp" target="_blank">CJ ENM 커머스부문</a></li>
+                    <li><a href="http://www.cjlogistics.com/" target="_blank">CJ대한통운</a></li>
+                    <li><a href="https://www.cjtelenix.com/" target="_blank">CJ텔레닉스</a></li>
+                    <li><a href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0" target="_blank">CJ올리브영</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">엔터테인먼트 & 미디어
+                  <ul class="site-sub">
+                    <li><a href="https://www.cjenm.com/ko/" target="_blank">CJ ENM 엔터테인먼트부문</a></li>
+                    <li><a href="https://corp.cgv.co.kr/?lang=kr" target="_blank">CJ CGV</a></li>
+                  </ul>
+                </li>
+                <li class="site-main">인프라
+                  <ul class="site-sub">
+                    <li><a href="https://www.cjenc.co.kr/kr/Default.asp" target="_blank">CJ대한통운 건설부문</a></li>
+                    <li><a href="https://www.cjolivenetworks.co.kr/" target="_blank">CJ올리브네트웍스</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

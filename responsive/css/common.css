@@ -1,0 +1,80 @@
+section{
+  padding: 15rem 3rem;
+  position: relative;
+  z-index: 0;
+  background-color: #fff;
+}
+.inner{
+  max-width: 130rem;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+.tit-wrap{
+  margin-bottom: 5rem;
+}
+.tit-wrap p.sub-tit{
+  font-size: 2.2rem;
+  color: #A78BFA;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 0.2rem;
+  opacity: 0;
+  
+}
+.tit-wrap h2.tit{
+  font-family: 'SchoolSafetyNotification';
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+}
+.tit-wrap p.txt{
+  font-size: 2rem;
+  line-height: 3rem;
+  opacity: 0;
+}
+a.con-btn{
+  display: block;
+  width: 22rem;
+  height: 5rem;
+  border: 0.3rem solid #A78BFA;
+  border-radius: 10rem;
+  position: relative;
+  margin-top: 5rem;
+  transition: background-color 0.3s;
+  opacity: 0;
+}
+a.con-btn span{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #A78BFA;
+  position: absolute;
+  top: 50%;
+  left: 1.4rem;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+a.con-btn:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  transform: translateY(-50%);
+  width: 3.2rem;
+  height: 3.2rem;
+  background: url(../img/btn-arrow-2.svg) no-repeat center/3.2rem;
+  transition: 0.3s;
+}
+/* --hover-- */
+a.con-btn:hover{
+  background-color: #A78BFA;
+}
+a.con-btn:hover span{
+  color: #fff;
+  transform: translate(4.5rem,-50%);
+}
+a.con-btn:hover:after{
+  background-image: url(../img/btn-arrow-1.svg);
+  transform: translate(-16rem,-50%);
+}

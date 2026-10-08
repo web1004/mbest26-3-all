@@ -1,0 +1,95 @@
+@charset "utf-8"; 
+/* font */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* font-family: "NanumSquareAc", sans-serif; font-weight: 200,400,600,800*/
+@font-face {
+  font-family: 'HsBombaram20';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+/* cjone */
+@font-face {
+  font-family: 'OneStoreMobileGothicBody';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'OneStoreMobileGothicTitleFont';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cafe24Danjeonghae';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+/* landing */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+/* responsive */
+@font-face {
+  font-family: 'SchoolSafetyNotification';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimAllimjangTTF-B.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: "seoulmilk_1000";
+    src: url("SEOULMILK\ 1000mL\ TTF.ttf");
+}
+@font-face {
+    font-family: "seoulmilk_500";
+    src: url("SEOULMILK\ 1000mL\ TTF.ttf");
+}
+
+/* Icon Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+html{
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+body{
+  font-family: "NanumSquareAc", sans-serif;
+  color: #1E3C35;
+}
+li{list-style-type: none;}  
+a{
+  text-decoration: none;  
+  color: inherit;   
+}
+h1, h2, h3, h4, h5, h6, ul, li, p{
+  margin: 0;
+	padding: 0;
+	font-size: 100%;
+  font-weight: normal;
+}
+article,aside,details,summary,figcaption,figure,
+footer,header,hgroup,main,nav,section{ 
+	display:block;  
+}
+input,button,select,textarea{outline: none; background: none; border: none;}
+button{cursor: pointer;}
+p{word-break: keep-all;}
+
